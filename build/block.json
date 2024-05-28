@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/formo-formore-header",
+  "version": "0.1.0",
+  "title": "Formo Formore Header",
+  "category": "widgets",
+  "icon": "car",
+  "description": "A moving marquee-style header with images clipped by text",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "imageOne": {
+      "type": "string",
+      "default": "https://images.pexels.com/photos/10353479/pexels-photo-10353479.jpeg"
+    },
+    "imageTwo": {
+      "type": "string",
+      "default": "https://images.pexels.com/photos/10353479/pexels-photo-10353479.jpeg"
+    },
+    "imageThree": {
+      "type": "string",
+      "default": "https://images.pexels.com/photos/10353479/pexels-photo-10353479.jpeg"
+    },
+    "imageFour": {
+      "type": "string",
+      "default": "https://images.pexels.com/photos/10353479/pexels-photo-10353479.jpeg"
+    }
+  },
+  "textdomain": "formo-formore-header",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

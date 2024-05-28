@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+ .formo-formore-header {
+  width: 100vw;
+  margin-left: calc(-1 *var(--wp--custom--spacing--outer));
+  overflow: hidden;
+  padding-top: var(--wp--custom--height--navbar);
+  
+  body .is-layout-constrained > &:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: 100vw;
+    margin-left: calc( -1 * var(--wp--custom--spacing--outer) )!important;
+  }
+  
+  & h1 {
+    font-size: 20vw;
+    white-space: nowrap;
+    text-indent: 0;
+    padding: .125em 0;
+    color: var(--wp--preset--color--formo-blue, rgb(0, 0, 255));
+    animation: marquee 75s linear infinite;
+    width: fit-content;
+    margin-bottom: 0;
+
+   @media (max-width: 780.1px) {
+      padding: .1em 0 .25em 0;
+      font-size: 36vw;
+    }
+  
+    & .fo-icon {
+      width: .5em!important;
+      padding: 0 .1em .2em .1em;
+    }
+  }
+  .more {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% auto;
+    background-repeat: repeat-x;
+    animation: inner 20s linear infinite;
+  }
+}
+@keyframes inner {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
